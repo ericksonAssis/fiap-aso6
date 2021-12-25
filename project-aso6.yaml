@@ -1,0 +1,54 @@
+﻿kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: aso6
+  selfLink: /apis/project.openshift.io/v1/projects/aso6
+  uid: 81a8a4e5-3876-4884-947a-84ceb8d382cb
+  resourceVersion: '3676924'
+  creationTimestamp: '2021-12-25T01:56:28Z'
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: aso6
+    openshift.io/requester: bzjmox
+    openshift.io/sa.scc.mcs: 's0:c27,c24'
+    openshift.io/sa.scc.supplemental-groups: 1000750000/10000
+    openshift.io/sa.scc.uid-range: 1000750000/10000
+  managedFields:
+    - manager: cluster-policy-controller
+      operation: Update
+      apiVersion: v1
+      time: '2021-12-25T01:56:28Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:openshift.io/sa.scc.mcs': {}
+            'f:openshift.io/sa.scc.supplemental-groups': {}
+            'f:openshift.io/sa.scc.uid-range': {}
+    - manager: openshift-apiserver
+      operation: Update
+      apiVersion: v1
+      time: '2021-12-25T01:56:28Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:openshift.io/description': {}
+            'f:openshift.io/display-name': {}
+            'f:openshift.io/requester': {}
+        'f:status':
+          'f:phase': {}
+    - manager: openshift-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2021-12-25T01:56:28Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:finalizers': {}
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
